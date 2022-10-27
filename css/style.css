@@ -1,0 +1,175 @@
+/* configuración global */
+/* DECLARAR UNAS CONSTANTES EN COLORES Y FUENTES */
+/* EL ROOT ES LA RAÍZ DE TODO PARA HACER LAS CONFIGURACIONES REPETITIVAS */
+:root{
+
+    /* fuente */
+    --titulos: 'Lato', sans-serif;
+    --parrafo: 'Roboto', sans-serif;
+    /* colores base */
+    --encabezado: rgb(5, 146, 3);
+    --pie: rgb(3, 116, 116);
+    --enlace: #fff; 
+    --enlaceSobre: rgb(184, 45, 2);
+
+}
+/* TITULOS */
+h1,h2,h3,h4,h5,h6{
+
+    /* FUENTE */
+    font-family:var(--titulos);
+    text-align:center; 
+}
+
+/* EVITAR DESBORDAMIENTOS (*) ES EL SELECTOR UNIVERSAL*/
+*{
+    box-sizing: border-box;
+}
+/* UTILIZAR UN SELECTOR DE CLASE(.) Y SU NOMBRE QUE HACE REFERENCIA A UNA CLASE DEL HTML */
+.home-wrapper{
+    background-image: url('../images/categorias/book4.jpg');
+    background-size: cover;
+}
+/* ENCABEZADO */
+header{
+    width: 100%;
+    /* POSICION FIJA  */
+    position: fixed;
+    background-color: var(--encabezado);
+    padding-top:3px;
+    padding-bottom: 5px;
+
+}
+
+header img {
+    width:200px;
+}
+
+header nav{
+    float: right; 
+    margin-top: 5px;
+}
+
+header nav a{
+    color: var(--enlace);
+    font-family: var(--parrafo);
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 3px;
+    padding: 5px 10px;
+}
+
+header nav a:hover{
+     color: var(--enlaceSobre);
+
+}
+
+.container{
+   width: 100%;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+/* INDENTIFICADOR EN CSS ES (#) */
+#home{
+    padding: 150px 0 160px;
+    text-align: center;
+}
+
+#home h1{
+    color: rgb(245, 244, 244);
+    font-weight: 700;
+    font: 4rem;
+    margin-bottom: 3.5px;
+
+}
+
+#home p {
+    color: #fff;
+    font-family: var(--parrafo);
+    
+    margin-top: 40px;
+    font-weight: 1000;
+    font-size: 5rem;
+}
+/* SECCION NOVEDADES    */
+#novedades .box {
+    
+    display: inline-block;
+    width: 33%;   /*para dividir el anche en 3 partes */
+    padding: 10px;
+
+}
+
+#novedades .box{
+    text-align: justify;
+   
+}
+
+#novedades .box img{
+    width: 100%;
+    padding-left: 30%;
+    padding-bottom: 10%;
+}
+
+#novedades .box h3{
+    padding-top: 5%;
+    margin-bottom: 5%;
+}
+/* TODAS LAS SECCIONES  */
+section{
+    padding-top: 5%;
+}
+
+#categoria .box{
+    display: inline-block;
+    width: 33%;
+    padding: 5%;
+}
+
+#categoria .box img{
+    width: 100%;
+    padding-left: 5%;
+}
+
+#categoria .box h3{
+    padding-top: 5%;
+    font-size: 20px;
+    font-weight: 1000;
+}
+
+#contacto{
+    width: 100%;
+    background-image: url('../images/map-image.png');
+    background-color: gray;
+    background-size: cover;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 10%;
+    
+} 
+#contacto h2 {
+    color: rgb(6, 6, 6);
+}
+#contacto input,select,textarea{
+    width: 25%;
+    padding: 10px 2px;
+    font-family: var(--parrafo);
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+/* footer */
+
+/* footer */
+footer{
+    width: 100%;
+    background-color: var(--pie);
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    padding: 30px 0;
+}
+
+
+
